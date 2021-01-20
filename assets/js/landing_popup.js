@@ -1,4 +1,4 @@
-;(setTimeout(function() {
+;(function() {
   var body = document.getElementsByTagName("body")[0];
   var container = document.createElement("div");
   container.setAttribute("style", 'top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 999; position: fixed; display: table-cell; vertical-align: middle;');
@@ -100,4 +100,4 @@
   }
 
   container.appendChild(contents[curContent]);
-}, 7000));
+})
