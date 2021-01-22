@@ -108,4 +108,4 @@
   }
 
   container.appendChild(contents[curContent]);
-}, 7000));
+}, 10000));
