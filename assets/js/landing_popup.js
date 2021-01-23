@@ -11,6 +11,19 @@
   var container = document.createElement("div");
   container.setAttribute("style", 'top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 999; position: fixed; display: table-cell; vertical-align: middle;');
   body.appendChild(container);
+  var closeBtn = document.createElement('a');
+  closeBtn.href = '#'
+  closeBtn.setAttribute("style", 'position: fixed; right: -20px; top: -20px; width: 60px; height: 60px; background: rgba(186,186,186,0.3); border-radius: 100%; color: white; font-size: 20px;');
+  var closeX = document.createElement('span');
+  closeX.innerText = 'x';
+  closeX.setAttribute('style', 'position: absolute; top: 20px; right: 30px;');
+  closeBtn.appendChild(closeX);
+  container.appendChild(closeBtn);
+  closeBtn.onclick = removeContainer;
+
+  function removeContainer() {
+    container.remove();
+  }
 
   function content1() {
     var contentBox = document.createElement("div");
