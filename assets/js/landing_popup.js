@@ -121,4 +121,4 @@
   }
 
   container.appendChild(contents[curContent]);
-}, 10000));
+}, 7000));
