@@ -1840,3 +1840,33 @@ section {
     padding-top: 4px;
   }
 }
+
+.indicates-required {
+  text-align: right;
+  font-size: 11px;
+  margin-right: 4%;
+}
+
+.mc-field-group {
+  clear: left;
+  position: relative;
+  width: 96%;
+  padding-bottom: 3%;
+  min-height: 50px;
+}
+
+.mc-field-group label {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.mc-field-group input {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  text-indent: 2%;
+}
+
+.mc-field-group input.mce_inline_error {
+  border: 2px solid #e85c41;
+}
